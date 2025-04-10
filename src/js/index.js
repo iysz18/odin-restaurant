@@ -1,4 +1,7 @@
 import "../css/styles.css";
-import { greeting } from "./modules/greeting.js";
+import pizzaImage from "../assets/pizza.jpg";
 
-console.log(greeting);
+const image = document.createElement('img');
+image.src = pizzaImage;
+
+document.body.appendChild(image);
