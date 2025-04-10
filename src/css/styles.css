@@ -1,1 +1,9 @@
-/* styles.css */
+/* global stylesheet */
+.page-wrapper {
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
