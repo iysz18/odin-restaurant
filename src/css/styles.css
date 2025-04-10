@@ -9,12 +9,15 @@
     --nav-btn-color: none;
     --nav-githubBtn-color: rgb(74, 74, 253);
     --nav-githubBtn-color-hover: rgb(95, 95, 252);
+    /* fonts */
+    --page-font: "Roboto";
 
 }
 
 /* global stylesheet */
 .page-wrapper {
     outline: solid red 2px;
+    font-family: var(--page-font);
 }
 
 /* navbar styling */
