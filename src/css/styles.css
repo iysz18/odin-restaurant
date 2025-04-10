@@ -1,9 +1,45 @@
-/* global stylesheet */
-.page-wrapper {
+/* root variables */
+:root {
+    /* dimesnions */
+    --nav-padding: 25px;
+    --nav-githubBtn-padding: 10px 20px;
+    --nav-githubBtn-marginL: 20px;
+    --btn-border-radius: 5px;
+    /* coloring */
+    --nav-btn-color: none;
+    --nav-githubBtn-color: rgb(74, 74, 253);
+    --nav-githubBtn-color-hover: rgb(95, 95, 252);
+
 }
 
+/* global stylesheet */
+.page-wrapper {
+    outline: solid red 2px;
+}
+
+/* navbar styling */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: var(--nav-padding);
+}
+
+/* styling the  menu buttons  */
+nav .btn-container .menu-btn {
+    background: var(--nav-btn-color);
+    border: none;
+    cursor: pointer;
+}
+
+nav .btn-container .github-btn {
+    background-color: var(--nav-githubBtn-color);
+    padding: var(--nav-githubBtn-padding);
+    margin-left: var(--nav-githubBtn-marginL);
+    border-radius: var(--btn-border-radius);
+    color: white;
+}
+
+nav .btn-container .github-btn:hover {
+    background-color: var(--nav-githubBtn-color-hover);
 }
