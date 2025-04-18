@@ -15,4 +15,12 @@ module.exports = {
         template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+        {
+            teset: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+        },
+    ],
+  },
 };
