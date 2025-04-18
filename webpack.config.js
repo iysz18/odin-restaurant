@@ -1,6 +1,6 @@
 // webpack.config.js
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -12,15 +12,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        template: "./src/template.html",
+      template: "./src/template.html",
     }),
   ],
   module: {
     rules: [
-        {
-            teset: /\.css$/i,
-            use: ["style-loader", "css-loader"],
-        },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
 };
