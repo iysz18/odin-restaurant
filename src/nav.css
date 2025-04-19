@@ -1,10 +1,21 @@
 /* styling the nav */
 :root {
-
+    --btn-container-margin: 10px;
+    --btn-container-fs: 20px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* styling for each button in the navbar */
+.button-container button {
+    margin-inline: 10px;
+    background: none;
+    border: none;
+
+    /* font settings */
+    font-size: var(--btn-container-fs);
 }
