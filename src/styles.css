@@ -1,15 +1,5 @@
-/* styles.css */
-body {
-    background: rebeccapurple;
-}
-
-/* testing */
-img {
-    width: 600px;
-    height: auto;
-}
-
-h1 {
-    font-size: 40px;
-    color: white;
+/* styling for the restaurant page */
+:root {
+    /* hero-container */
+    --heroContainer-fc: #454545;
 }
