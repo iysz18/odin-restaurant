@@ -13,9 +13,28 @@
 /* styling for each button in the navbar */
 .button-container button {
     margin-inline: 10px;
+}
+
+/* section of styling for each button */
+button {
     background: none;
     border: none;
 
     /* font settings */
     font-size: var(--btn-container-fs);
+}
+
+.github-btn {
+    background: purple;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.github-btn:hover {
+    background: rgb(181, 2, 181);
+}
+
+button:hover {
+    cursor: pointer;
 }
