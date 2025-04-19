@@ -8,3 +8,8 @@ img {
     width: 600px;
     height: auto;
 }
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
