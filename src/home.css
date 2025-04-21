@@ -1,0 +1,10 @@
+/* styling for the home tab content */
+:root {
+    /* global */
+    --global-ff: "Roboto";
+    --global-fc: #393939;
+    
+    /* font settings */
+    --hero-fs: 50px;
+    --hero-sub-fs: 35px;   
+}
