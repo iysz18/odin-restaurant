@@ -2,4 +2,18 @@
 :root {
     /* hero-container */
     --heroContainer-fc: #454545;
+    --page-wrapper-padding: 0 50px;
+
+    /* coloring / styling */
+    --body-bg-color: #e6e6e6;
 }
+
+body {
+    background: var(--body-bg-color);
+}
+
+
+.page-wrapper {
+    padding: var(--page-wrapper-padding);
+}
+
