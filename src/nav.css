@@ -2,12 +2,22 @@
 :root {
     --btn-container-margin: 10px;
     --btn-container-fs: 20px;
+    --nav-bg-color: #d7d7d7;
+    --nav-padding: 10px 50px;
+    --nav-border-radius: 3px;
+    --nav-height: 50px;
+    --nav-margin-top: 15px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: var(--nav-margin-top);
+    height: var(--nav-height);
+    border-radius: var(--nav-border-radius);
+    padding: var(--nav-padding);
+    background: var(--nav-bg-color);
 }
 
 /* styling for each button in the navbar */
