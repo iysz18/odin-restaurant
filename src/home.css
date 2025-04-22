@@ -7,12 +7,17 @@
     /* font settings */
     --hero-fs: 60px;
     --hero-sub-fs: 25px;   
+
+    /* buttons */
+    --left-container-btnColor: purple;
+    --left-container-btnPadding: 10px 20px;
+    --whiteColor: white;
+    --btn-radius: 10px;
 }
 
 .hero-container {
     display: flex;
 }
-
 
 .left-container {
     display: flex;
@@ -25,4 +30,16 @@
 
 .hero-sub-str {
     font-size: var(--hero-sub-fs);
+}
+
+.left-container .button-container button {
+    background: var(--left-container-btnColor);
+    padding: var(--left-container-btnPadding);
+    color: var(--whiteColor);
+    border-radius: var(--btn-radius);
+}
+
+.span-or {
+    margin-inline: 20px;
+    font-size: 30px;
 }
