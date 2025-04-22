@@ -6,10 +6,14 @@
 
     /* coloring / styling */
     --body-bg-color: #e6e6e6;
+
+    /* global stuff */
+    --global-ff: "Roboto";
 }
 
 body {
     background: var(--body-bg-color);
+    font-family: var(--global-ff);
 }
 
 
