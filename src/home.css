@@ -5,8 +5,8 @@
     --global-fc: #393939;
     
     /* font settings */
-    --hero-fs: 60px;
-    --hero-sub-fs: 25px;   
+    --hero-fs: 55px;
+    --hero-sub-fs: 20px;   
 
     /* buttons */
     --left-container-btnColor: purple;
@@ -16,12 +16,16 @@
 }
 
 .hero-container {
-    display: flex;
+    display: flex;  
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
 .left-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    width: 40%;
 }
 
 .hero-str {
@@ -42,4 +46,9 @@
 .span-or {
     margin-inline: 20px;
     font-size: 30px;
+}
+
+/* right side of the hero container */
+img {
+    height: 600px;
 }
