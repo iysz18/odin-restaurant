@@ -36,14 +36,20 @@ export function renderHome() {
     const heroImg = document.createElement("img");
     heroImg.src = img;
 
+    // I couldn't fix this with css so this container will fix it instead
+    // why? because the cta buttons in hero-container > left-container arent alined to the left
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList.add("button-container");
+    buttonContainer.appendChild(githubBtn);
+    buttonContainer.appendChild(spanElementOr);
+    buttonContainer.appendChild(heroMenuBtn);
+    
     // wrapper holding the left side (anything but the img)
     const leftWrapper = document.createElement("div");
     leftWrapper.classList.add("left-container");
     leftWrapper.appendChild(heroStr);
     leftWrapper.appendChild(heroSubStr);
-    leftWrapper.appendChild(githubBtn);
-    leftWrapper.appendChild(spanElementOr);
-    leftWrapper.appendChild(heroMenuBtn);
+    leftWrapper.appendChild(buttonContainer);
         
     // append each createc child node to the heroContainer
     heroContainer.appendChild(leftWrapper);
