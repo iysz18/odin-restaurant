@@ -9,8 +9,6 @@ import { renderHome } from "./home.js";
 const contentContainer = document.querySelector(".content");
 const homeBtn = document.querySelector("#home-btn");
 
-// function to reset if possible the content of contentContainer
- 
 // in later development, each button in the navbar will be
 // stored in a nodeList, for now to test this code, only home
 // button will have the eventlistener to render the home tab content
