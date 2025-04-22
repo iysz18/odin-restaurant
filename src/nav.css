@@ -21,7 +21,7 @@
 }
 
 /* styling for each button in the navbar */
-.button-container button {
+.nav.button-container button {
     margin-inline: 10px;
 }
 
@@ -34,6 +34,7 @@ button {
     font-size: var(--btn-container-fs);
 }
 
+/* fix this and replace values with variables later */
 .github-btn {
     background: purple;
     padding: 10px 20px;
