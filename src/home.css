@@ -8,3 +8,15 @@
     --hero-fs: 50px;
     --hero-sub-fs: 35px;   
 }
+
+.hero-str {
+    font-size: var(--hero-fs);
+}
+
+.hero-sub-str {
+    font-size: var(--hero-sub-fs);
+}
+
+.github-btn .hero-menu-btn {
+}
+
