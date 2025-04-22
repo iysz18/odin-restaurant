@@ -30,10 +30,13 @@
 
 .hero-str {
     font-size: var(--hero-fs);
+    margin: 0;
 }
 
 .hero-sub-str {
     font-size: var(--hero-sub-fs);
+    margin-block: 20px;
+
 }
 
 .left-container .button-container button {
