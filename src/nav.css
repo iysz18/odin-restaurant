@@ -35,14 +35,15 @@ button {
 }
 
 /* fix this and replace values with variables later */
-.github-btn {
+.github-btn, a{
     background: purple;
     padding: 10px 20px;
     color: white;
     border-radius: 10px;
+    text-decoration: none;
 }
 
-.github-btn:hover {
+.github-btn:hover, a:hover {
     background: rgb(181, 2, 181);
 }
 
