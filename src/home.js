@@ -9,12 +9,12 @@ export function renderHome() {
 
     // hero string
     const heroStr = document.createElement("h1");
-    heroStr.textContent = "Lorem, ipsum dolor sit amet consectetur adipisicing elit.";
+    heroStr.textContent = "Vibrant Bowl Creations Full of Greens, Goodness, and a Fiery Kick";
     heroStr.classList.add("hero-str");
 
     // hero sub string
     const heroSubStr = document.createElement("p");
-    heroSubStr.textContent = "Cumque earum asperiores exercitationem quae. Perspiciatis, atque? Nihil natus aperiam soluta excepturi, exercitationem, voluptatibus similique quod ea, culpa atque nesciunt iure laudantium.";
+    heroSubStr.textContent = "Dive into a world of vibrant flavors with our handcrafted bowls—stacked with fresh greens, wholesome ingredients, and a kick of spice that brings every bite to life.";
     heroSubStr.classList.add("hero-sub-str");
 
     // hero github button
