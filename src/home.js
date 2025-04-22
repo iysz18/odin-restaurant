@@ -1,11 +1,11 @@
 import "normalize.css";
 import "./home.css";
-
+import img from  "./hero-food.png";
 
 export function renderHome() {
     // create the necessary elements to render the home tab content
     const heroContainer = document.createElement("div");
-    heroContainer.classList.add("hero-containre");
+    heroContainer.classList.add("hero-container");
 
     // hero string
     const heroStr = document.createElement("h1");
@@ -31,17 +31,23 @@ export function renderHome() {
     const spanElementOr = document.createElement("span");
     spanElementOr.textContent = "or";
     spanElementOr.classList.add("span-or");
-
     
-    // hero image
+    // hero img
     const heroImg = document.createElement("img");
-    heroImg.src = foodImg;
-    
-    heroContainer.appendChild(heroStr);
-    heroContainer.appendChild(heroSubStr);
-    heroContainer.appendChild(githubBtn);
-    heroContainer.appendChild(spanElementOr);
-    heroContainer.appendChild(heroMenuBtn);
+    heroImg.src = img;
+
+    // wrapper holding the left side (anything but the img)
+    const leftWrapper = document.createElement("div");
+    leftWrapper.classList.add("left-container");
+    leftWrapper.appendChild(heroStr);
+    leftWrapper.appendChild(heroSubStr);
+    leftWrapper.appendChild(githubBtn);
+    leftWrapper.appendChild(spanElementOr);
+    leftWrapper.appendChild(heroMenuBtn);
+        
+    // append each createc child node to the heroContainer
+    heroContainer.appendChild(leftWrapper);
+    heroContainer.appendChild(heroImg);
 
     return heroContainer;
 }
