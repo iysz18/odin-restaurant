@@ -5,8 +5,18 @@
     --global-fc: #393939;
     
     /* font settings */
-    --hero-fs: 50px;
-    --hero-sub-fs: 35px;   
+    --hero-fs: 60px;
+    --hero-sub-fs: 25px;   
+}
+
+.hero-container {
+    display: flex;
+}
+
+
+.left-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-str {
