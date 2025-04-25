@@ -7,6 +7,9 @@
     --nav-border-radius: 3px;
     --nav-height: 50px;
     --nav-margin-top: 15px;
+
+    /* stying for the buttons */
+    --nav-githubBtn-padding: 10px 20px;
 }
 
 .navbar {
@@ -37,7 +40,7 @@ button {
 /* fix this and replace values with variables later */
 .github-btn, a{
     background: purple;
-    padding: 10px 20px;
+    padding: var(--nav-githubBtn-padding);
     color: white;
     border-radius: 10px;
     text-decoration: none;
@@ -45,6 +48,7 @@ button {
 
 .github-btn:hover, a:hover {
     background: rgb(181, 2, 181);
+    padding: var(--nav-githubBtn-padding);
 }
 
 button:hover {
