@@ -18,8 +18,8 @@
 .hero-container {
     display: flex;  
     justify-content: space-around;
-    margin-top: 50px;
-    outline: solid red 2px;
+    margin-block: 75px;
+    /* outline: solid red 2px; */
 }
 
 .left-container {
