@@ -3,7 +3,7 @@
     --btn-container-margin: 10px;
     --btn-container-fs: 20px;
     --nav-bg-color: #d7d7d7;
-    --nav-padding: 10px 50px;
+    --nav-padding: 10px 40px;
     --nav-border-radius: 3px;
     --nav-height: 50px;
     --nav-margin-top: 15px;
@@ -21,6 +21,10 @@
     border-radius: var(--nav-border-radius);
     padding: var(--nav-padding);
     background: var(--nav-bg-color);
+
+    /* testing, going to change in later version */
+    margin-inline: auto;
+    width: 85%;
 }
 
 /* styling for each button in the navbar */
