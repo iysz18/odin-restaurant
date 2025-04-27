@@ -56,7 +56,4 @@ export function renderHome() {
     heroContainer.appendChild(heroImg);
 
     return heroContainer;
-}
-
-
-
+};
