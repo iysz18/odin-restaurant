@@ -1,9 +1,32 @@
 /* styling for the menu tab content */
 :root {
-   
+   --hero-str-fs: 75px;
+   --menu-sub-str-fs: 20px;
 }
 
 .menu-container {
+    /* outline: red solid 2px; */
+    margin-top: 75px;
+}
+
+.menu-hero-str {
+    text-align: center;
+    font-size: var(--hero-str-fs);
+    margin: 0;
+}
+
+.menu-sub-str {
+    text-align: center;
+    font-size: var(--menu-sub-str-fs);
+}
+
+.grid-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 20px   ;
+}
+
+.menu-item {
     background: red;
-    height: 500px;
+    padding: 50px;
 }
