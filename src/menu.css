@@ -2,11 +2,20 @@
 :root {
    --hero-str-fs: 75px;
    --menu-sub-str-fs: 20px;
+
+   /* Menu item styling */
+   --menuItem-bc: #dfdddd;
+
+   /* global */
+   --content-margin: 75px 0;
 }
 
 .menu-container {
-    /* outline: red solid 2px; */
-    margin-top: 75px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin: var(--content-margin);
+
 }
 
 .menu-hero-str {
@@ -22,11 +31,21 @@
 
 .grid-container {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    gap: 20px   ;
+    grid-template: repeat(4, 100px) / repeat(2, 500px);
+    gap: 20px;
 }
 
 .menu-item {
-    background: red;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--menuItem-bc);
+}
+
+.menu-item-name {
+    font-size: 25px
+}
+
+.menu-item-desc {
+    font-size: 20px;
 }
