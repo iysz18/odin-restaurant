@@ -4,7 +4,13 @@
    --menu-sub-str-fs: 20px;
 
    /* Menu item styling */
-   --menuItem-bc: #dfdddd;
+    --menuItem-bc: #dfdddd;
+    --menuItem-bc-hover: #cbcbcb;
+    --menu-item-padding: 50px;
+    --grid-gap: 20px;
+    --grid-margin-top: 50px;
+    --menu-item-name-fc: 30px;
+    --menu-item-desc-fc: 25px;
 
    /* global */
    --content-margin: 75px 0;
@@ -31,8 +37,8 @@
 .grid-container {
     display: grid;
     grid-template: repeat(4, auto) / repeat(2, auto);
-    gap: 20px;
-    margin-top: 50px;
+    gap: var(--grid-gap);
+    margin-top: var(--grid-margin-top);
 }
 
 .menu-item {
@@ -41,13 +47,18 @@
     align-items: center;
     background: var(--menuItem-bc);
     width: auto;
-    padding: 50px;
+    padding: var(--menu-item-padding);
 }
 
 .menu-item-name {
-    font-size: 25px
+    font-size: var(--menu-item-name-fc);
+}
+
+/* testing hover effect for menu-item-name */
+.menu-item-name:hover {
+    background: var(--menuItem-bc-hover);
 }
 
 .menu-item-desc {
-    font-size: 20px;
+    font-size: var(--menu-item-desc-fc);
 }
