@@ -1,8 +1,19 @@
 /* stylesheet applied to the about tab content */
 :root {
-    --about-hero-str-fc: 50px;
-    --about-hero-sub-str-fc: 25px;
+    --hero-fs: 50px;
 }
+
+/* whole container which wrapps each element */
+.about-container {
+    outline: solid red 2px;
+    text-align: center;
+}
+
+/* Hero text for the about content */
+.about-hero {
+    font-size: var(--hero-fs);
+}
+
 
 /* retaurant introduction / mission statement styling */
 .restaurant-introduction {
