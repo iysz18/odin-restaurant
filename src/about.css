@@ -1,0 +1,35 @@
+/* stylesheet applied to the about tab content */
+:root {
+    --about-hero-str-fc: 50px;
+    --about-hero-sub-str-fc: 25px;
+}
+
+/* retaurant introduction / mission statement styling */
+.restaurant-introduction {
+
+}
+
+/* our story / history styling */
+.our-history {
+
+}
+
+/* the chef / team styling */
+.chef-team {
+
+}
+
+/* our philosophy / ingredients / sourcing styling */
+.philosophy {
+
+}
+
+/* ambience / experience styling*/
+.ambience-experience {
+
+}
+
+/* closing line / call to action */
+.close-line-cta {
+    
+}
