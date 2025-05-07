@@ -5,7 +5,7 @@ import "./nav.css";
 // importing modules to render each tab content
 import { renderHome } from "./home.js";
 import { renderMenu } from "./menu.js";
-
+import { renderAbout } from "./about.js";
 
 document.addEventListener("DOMContentLoaded", ()  => {
     // function handling reset of the contentContainer
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", ()  => {
     const contentContainer = document.querySelector(".content");
     const homeBtn = document.querySelector("#home-btn");
     const menuBtn = document.querySelector("#menu-btn");
+    const aboutBtn = document.querySelector("#about-btn");
 
     // set home as default tab content thats loaded up as default at page load
     contentContainer.appendChild(renderHome());
@@ -42,6 +43,12 @@ document.addEventListener("DOMContentLoaded", ()  => {
         resetContainer();
         // after resseting the contentContainer, render the menu
         contentContainer.appendChild(renderMenu());
+    });
+
+    aboutBtn.addEventListener("click", () => {
+        resetContainer();
+        // after resseting the contentContainer, render the menu
+        contentContainer.appendChild(renderAbout());
     });
 
 });
