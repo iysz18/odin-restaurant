@@ -11,7 +11,7 @@ export function renderAbout() {
         container.classList.add("content-container");
         containerArr.push(container);
     }
-
+    
     // create the container which contains each element for
     // the representation of the about tab content 
     const aboutContainer = document.createElement("div");
