@@ -1,6 +1,17 @@
 /* stylesheet applied to the about tab content */
 :root {
     --hero-fs: 50px;
+    --h2-fs: 35px;
+    --p-fs: 25px;
+}
+
+/* global stuff */
+h2 {
+    font-size: var(--h2-fs);
+}
+
+p {
+    font-size: var(--p-fs);
 }
 
 /* whole container which wrapps each element */
@@ -12,18 +23,18 @@
 /* content container styling */
 .content-container {
     /* outline: solid blue 2px; */
-    margin-block: 15px;
+    margin-block: 15px; 
 }
 
 /* Hero text for the about content */
 .about-hero {
-
+    font-size: var(--hero-fs);
 }
 
 
 /* retaurant introduction / mission statement styling */
 .restaurant-introduction {
-
+    
 }
 
 /* our story / history styling */
