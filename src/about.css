@@ -5,13 +5,19 @@
 
 /* whole container which wrapps each element */
 .about-container {
-    outline: solid red 2px;
+    /* outline: solid red 2px; */
     text-align: center;
+}
+
+/* content container styling */
+.content-container {
+    /* outline: solid blue 2px; */
+    margin-block: 15px;
 }
 
 /* Hero text for the about content */
 .about-hero {
-    font-size: var(--hero-fs);
+
 }
 
 
