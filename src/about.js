@@ -4,13 +4,17 @@ import "./about.css";
 
 // export of the renderAbout function
 export function renderAbout() {
-    // create sub containers to 
-    let containerArr = [];
-    for (let i = 0; i < 6; i++) {
-        let container = document.createElement("div");
-        container.classList.add("content-container");
-        containerArr.push(container);
-    }
+    // Create containers for textblocks
+    function createElements(count, builderFn) {
+        return Array.from({ length: count }, builderFn);
+      }
+      
+      // Usage
+      const containerArr = createElements(6, () => {
+        const el = document.createElement("div");
+        el.classList.add("content-container");
+        return el;
+      });
     
     // create the container which contains each element for
     // the representation of the about tab content 
