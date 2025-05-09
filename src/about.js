@@ -5,16 +5,12 @@ import "./about.css";
 // export of the renderAbout function
 export function renderAbout() {
     // Create containers for textblocks
-    function createElements(count, builderFn) {
-        return Array.from({ length: count }, builderFn);
-      }
-      
-      // Usage
-      const containerArr = createElements(6, () => {
+    const containerArr = new Array();
+    for (let i = 0; i < 6; i++) {
         const el = document.createElement("div");
-        el.classList.add("content-container");
-        return el;
-      });
+        el.classList.add(".content-container");
+        containerArr.push(el);
+    }
     
     // create the container which contains each element for
     // the representation of the about tab content 
