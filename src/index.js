@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", ()  => {
     const tabButtons = document.querySelectorAll("[data-tab]");
     tabButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            // Reset the container, when new tab button has been clicked
             const tab = button.dataset.tab;
             // clear existing content
             contentContainer.innerHTML = "";
