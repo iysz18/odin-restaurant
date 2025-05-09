@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", ()  => {
         //     contentContainer.innerHTML = "";
         // }
 
-        // reset the contentContainer with resetContainer()
+        // reset the contentContainer with resetContainer() 
         resetContainer();
 
         // render the home tab content
