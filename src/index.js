@@ -8,47 +8,32 @@ import { renderMenu } from "./menu.js";
 import { renderAbout } from "./about.js";
 
 document.addEventListener("DOMContentLoaded", ()  => {
-    // function handling reset of the contentContainer
-    const resetContainer = () => {
-        if (contentContainer.innerHTML != '') contentContainer.innerHTML = "";
-    }
-    
-    // reference elements for tab browsing
+    // Main container holding the rendered tab content
     const contentContainer = document.querySelector(".content");
-    const homeBtn = document.querySelector("#home-btn");
-    const menuBtn = document.querySelector("#menu-btn");
-    const aboutBtn = document.querySelector("#about-btn");
 
-    // set home as default tab content thats loaded up as default at page load
+    // Render home as default tab
     contentContainer.appendChild(renderHome());
-        
-    // in later development, each button in the navbar will be
-    // stored in a nodeList, for now to test this code, only home
-    // button will have the eventlistener to render the home tab content
-    homeBtn.addEventListener("click", () => {
-        // before proceeding to render the content, check if contentContainer is empty
-        // if (contentContainer.innerHTML !== "") {
-        //     contentContainer.innerHTML = "";
-        // }
 
-        // reset the contentContainer with resetContainer() 
-        resetContainer();
+    const tabButtons = document.querySelectorAll("[data-tab]");
+    tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Reset the container, when new tab button has been clicked
+            const tab = button.dataset.tab;
+            // clear existing content
+            contentContainer.innerHTML = "";
 
-        // render the home tab content
-        contentContainer.appendChild(renderHome());
+            // Call different functions based on the tab
+            switch (tab) {
+                case "home":
+                    contentContainer.appendChild(renderHome());
+                    break;
+                case "menu":
+                    contentContainer.appendChild(renderMenu());
+                    break;
+                case "about":
+                    contentContainer.appendChild(renderAbout());
+                    break;
+            }
+        });
     });
-
-    // rendering the menu
-    menuBtn.addEventListener("click", () => {
-        resetContainer();
-        // after resseting the contentContainer, render the menu
-        contentContainer.appendChild(renderMenu());
-    });
-
-    aboutBtn.addEventListener("click", () => {
-        resetContainer();
-        // after resseting the contentContainer, render the menu
-        contentContainer.appendChild(renderAbout());
-    });
-
 });
