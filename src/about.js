@@ -1,16 +1,19 @@
 // module to render the about page
 import "normalize.css";
 import "./about.css";
+import { createElement } from "react";
 
 // export of the renderAbout function
 export function renderAbout() {
     // Create containers for textblocks
-    const containerArr = new Array();
-    for (let i = 0; i < 6; i++) {
-        const el = document.createElement("div");
-        el.classList.add(".content-container");
-        containerArr.push(el);
-    }
+    // const containerArr = new Array();
+    const containerArr = Array.from({ length: 6 }, () => {
+        const container = createElement("div");
+        container.classList.add("textblock-div");
+        return container;
+    });
+
+    console.log(containerArr);
     
     // create the container which contains each element for
     // the representation of the about tab content 
@@ -36,7 +39,7 @@ export function renderAbout() {
     const historySub = document.createElement("p");
     history.textContent = "Our Story / History";
     historySub.textContent = "Vibrant Bowl was born from a simple idea: fast food can be fresh, nourishing, and exciting. Tired of the bland and boring, our founders set out to create a place where vibrant flavors meet mindful eating. What started as a passion project in a tiny test kitchen has grown into a bold movement — redefining how bowls should taste.";
-    containerArr[1].appendChild(history);
+    containerArr[1].appendCh ild(history);
     containerArr[1].appendChild(historySub);
 
     /* the chef / team */
