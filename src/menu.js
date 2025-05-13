@@ -19,17 +19,15 @@ export function renderMenu() {
     // grid-container holding each menu item
     const grid = document.createElement("div");
     grid.classList.add("grid-container");
-
-    let itemsArr = [];
-
-    // create each menu item, append them to grid
-    for (let i = 0; i < 8; i++) {
+    
+    // Improved way to create 8 elements in an array
+    const itemsArr = Array.from({ length: 8 }, () => {
         const menuItem = document.createElement("div");
         menuItem.classList.add("menu-item");
-        // add menu item to imtesArr
-        itemsArr.push(menuItem);
         grid.appendChild(menuItem);
-    }
+        
+        return menuItem;
+    });
 
     // add to each card next its sibling grid element the name of the menu item
     itemsArr[0].textContent = "Spice Kick Harvest Bowl";
