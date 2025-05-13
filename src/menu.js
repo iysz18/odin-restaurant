@@ -19,15 +19,6 @@ export function renderMenu() {
     // grid-container holding each menu item
     const grid = document.createElement("div");
     grid.classList.add("grid-container");
-    
-    // Improved way to create 8 elements in an array
-    // const itemsArr = Array.from({ length: 8 }, () => {
-    //     const menuItem = document.createElement("div");
-    //     menuItem.classList.add("menu-item");
-    //     grid.appendChild(menuItem);
-        
-    //     return menuItem;
-    // });
 
     // Create and add text content to each menu item in the grid
     const menuItems = [
