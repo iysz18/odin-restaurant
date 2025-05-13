@@ -4,13 +4,6 @@ import "./about.css";
 
 // export of the renderAbout function
 export function renderAbout() {
-    // Create containers for textblocks
-    const containerArr = Array.from({ length: 6 }, () => {
-        const container = document.createElement("div");
-        container.classList.add("textblock-div");
-        return container;
-    });
-
     // data structure for each para and header string
     const aboutSections = [
         {
