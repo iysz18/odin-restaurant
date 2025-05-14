@@ -40,3 +40,12 @@
     gap: var(--grid-gap);
     margin-top: var(--grid-margin-top);
 }
+
+/* menu items styling */
+.menu-item-name {
+    font-size: var(--menu-item-name-fc);
+}
+
+.menu-item-desc {
+    font-size: var(--menu-item-desc-fc);
+}
