@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", ()  => {
                 case "home":
                     contentContainer.appendChild(renderHome());
                     break;
-                case "menu":
-                    contentContainer.appendChild(renderMenu());
-                    break;
+                // case "menu":
+                //     contentContainer.appendChild(renderMenu());
+                //     break;
                 case "about":
                     contentContainer.appendChild(renderAbout());
                     break;
