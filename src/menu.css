@@ -40,25 +40,3 @@
     gap: var(--grid-gap);
     margin-top: var(--grid-margin-top);
 }
-
-.menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--menuItem-bc);
-    width: auto;
-    padding: var(--menu-item-padding);
-}
-
-.menu-item-name {
-    font-size: var(--menu-item-name-fc);
-}
-
-/* testing hover effect for menu-item-name */
-.menu-item-name:hover {
-    background: var(--menuItem-bc-hover);
-}
-
-.menu-item-desc {
-    font-size: var(--menu-item-desc-fc);
-}
