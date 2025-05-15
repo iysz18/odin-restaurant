@@ -48,6 +48,7 @@ export function renderAbout() {
 
         section.appendChild(h2);
         section.appendChild(p);
+        section.classList.add("grid-item");
 
         return section;
     }
