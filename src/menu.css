@@ -45,11 +45,6 @@
     margin-top: 2rem;
 }
 
-.menu-sub-str {
-    text-align: center;
-    font-size: var(--menu-sub-str-fs);
-}
-
 /* === Menu Item Name === */
 .menu-item-name {
     background-color: var(--color-item-bg);
