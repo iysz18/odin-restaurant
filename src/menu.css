@@ -17,17 +17,32 @@
     --max-width-container: 1200px;
 }
 
-.menu-container {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    margin: var(--content-margin);
+/* === Global Reset === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.menu-hero-str {
-    text-align: center;
-    font-size: var(--hero-str-fs);
-    margin: 0;
+/* === Menu Container === */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--margin-content);
+    max-width: var(--max-width-container);
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === Grid Container === */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: var(--gap-grid);
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .menu-sub-str {
@@ -35,28 +50,30 @@
     font-size: var(--menu-sub-str-fs);
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 400px));
-    gap: var(--gap-grid);
-    margin-top: var(--margin-top-grid);
-}
-
-/* menu items styling */
+/* === Menu Item Name === */
 .menu-item-name {
-    font-size: var(--menu-item-name-fc);
-}
-
-.menu-item-desc {
-    font-size: var(--menu-item-desc-fc);
-}
-
-.menu-item {
-    background-color: var(--background-menu-item);
-    padding: var(--padding-menu-item);
+    background-color: var(--color-item-bg);
+    font-size: var(--font-size-item-name);
+    font-weight: bold;
+    padding: var(--padding-item);
     transition: background-color 0.3s ease;
+    border-radius: 8px;
 }
 
-.menu-item:hover {
-    background-color: var(--background-menu-item-hover);
+/* === Menu Item Description === */
+.menu-item-desc {
+    background-color: var(--color-item-bg);
+    font-size: var(--font-size-item-desc);
+    padding: var(--padding-item);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    line-height: 1.6;
+}
+
+/* ===== Hover Effects ===== */
+.menu-item-name:hover,
+.menu-item-desc:hover {
+  background-color: var(--color-item-bg-hover);
 }
