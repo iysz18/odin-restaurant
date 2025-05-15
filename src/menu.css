@@ -64,6 +64,11 @@
     margin-top: 2rem;
 }
 
+/* === Set border for each menu item === */
+.menu-grid-container > div {
+    border: 2px solid black;
+}
+
 /* === Menu Item Name === */
 .menu-item-name {
     background-color: var(--color-item-bg);
