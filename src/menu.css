@@ -36,6 +36,25 @@
     margin-right: auto;
 }
 
+/* === Styling for Hero container with hero string and substring === */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* enable outline for visualization of container */
+    /* outline: red 2px solid; */
+}
+
+/* === Hero string & sub string === */
+.hero-string, .sub-string {
+    margin: 0;
+}
+
+.hero-string { 
+    font-size: var(--font-size-hero);
+}
+
 /* === Grid Container === */
 .grid-container {
     display: grid;
