@@ -10,6 +10,23 @@ export function renderMenu() {
     const menuGrid = document.createElement("div");
     menuGrid.classList.add("grid-container");
     
+    // Hero string and substring
+    const heroContainer = document.createElement("div");
+    heroContainer.classList.add("hero-container");
+    
+    const heroString = document.createElement("h1");
+    heroString.textContent = "Wholesome Bowls, Bold Flavors";
+    heroString.classList.add("hero-string");
+
+    const heroSub = document.createElement("p");
+    heroSub.textContent = "Crafted with vibrant veggies, grains, and global spices";
+    heroSub.classList.add("hero-sub-string");
+
+    heroContainer.appendChild(heroString);
+    heroContainer.appendChild(heroSub);
+
+    menuContainer.appendChild(heroContainer);
+    
     // Arra containing key-value pairs of each item on the menu
     const menuItems = [
         {
