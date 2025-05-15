@@ -1,18 +1,45 @@
 /* stylesheet applied to the about tab content */
 :root {
-    --hero-fs: 50px;
-    --h2-fs: 35px;
-    --p-fs: 25px;
+    /* Font Sizes */
+    --font-size-about-h1: 4.5rem;
+    --font-size-about-h2: 1.5rem;
+    --font-size-about-p: 1.25rem;
+
+    /* Spacing */
+    --padding-grid-item: 15px;
+    --max-width-container: 1200px;
 }
 
-/* === Grid container === */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    /* enable outline for visualization of container */
+    /* outline: red 2px solid; */
+}
+
+/* === Grid container and grid items styling === */
 .grid-container {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    justify-content: center;
+    max-width: var(--max-width-container);
 }
 
 .grid-item {
-    background: red;
     border: 2px solid black;
+    padding: var(--padding-grid-item);
+    text-align: center;
 }
+
+.about-hero { 
+    font-size: var(--font-size-about-h1);
+    text-align: center;
+}           
+
+.grid-item h2 { font-size: var(--font-size-about-h2); }
+
+.grid-item p { font-size: var(--font-size-about-p); }
