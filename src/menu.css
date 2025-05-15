@@ -62,8 +62,8 @@
     gap: var(--gap-grid);
     width: 100%;
     margin-top: 2rem;
-
 }
+
 /* === Menu Item Name === */
 .menu-item-name {
     background-color: var(--color-item-bg);
