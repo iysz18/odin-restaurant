@@ -2,7 +2,7 @@
 :root {
     /* Font Sizes */
     --font-size-hero: 4.5rem;
-    --font-size-subtitle: 1.25rem;
+    --font-size-subtitle: 1.75rem;
     --font-size-item-name: 1.75rem;
     --font-size-item-desc: 1.25rem;
 
@@ -47,13 +47,9 @@
 }
 
 /* === Hero string & sub string === */
-.menu-hero-string, .menu-sub-string {
-    margin: 0;
-}
-
-.menu-hero-string { 
-    font-size: var(--font-size-hero);
-}
+.menu-hero-string, .menu-sub-string { margin: 0; }
+.menu-hero-string { font-size: var(--font-size-hero); }
+.menu-hero-sub-string { font-size: var(--font-size-subtitle); }
 
 /* === Grid Container === */
 .menu-grid-container {
@@ -65,9 +61,7 @@
 }
 
 /* === Set border for each menu item === */
-.menu-grid-container > div {
-    border: 2px solid black;
-}
+.menu-grid-container > div { border: 2px solid black; }
 
 /* === Menu Item Name === */
 .menu-item-name {
@@ -96,6 +90,6 @@
 
 /* ===== Hover Effects ===== */
 .menu-item-name:hover,
-.menu-item-desc:hover {
-  background-color: var(--color-item-bg-hover);
+.menu-item-desc:hover { 
+    background-color: var(--color-item-bg-hover); 
 }
