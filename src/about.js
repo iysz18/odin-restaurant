@@ -32,6 +32,10 @@ export function renderAbout() {
         }
     ];
 
+    // Create the grid which contains each textblock
+    const gridContainer = document.createElement("div");
+    gridContainer.classList.add("grid-container");
+
     // Implementing a helpfer funtion to dont DRY!
     function createSection(heading, para) {
         const section = document.createElement("div");
@@ -61,8 +65,11 @@ export function renderAbout() {
     // new div containing h2 and p's
     aboutSections.forEach(section => {
         const content = createSection(section.heading, section.paragraph);
-        aboutContainer.appendChild(content);
+        gridContainer.appendChild(content);
     });
+
+    // Last: append the grid-container to the aboutContainer
+    aboutContainer.appendChild(gridContainer);
 
     return aboutContainer;
 }
