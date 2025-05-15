@@ -5,59 +5,14 @@
     --p-fs: 25px;
 }
 
-/* global stuff */
-h2 {
-    font-size: var(--h2-fs);
+/* === Grid container === */
+.grid-container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 20px;
 }
 
-p {
-    font-size: var(--p-fs);
-}
-
-/* whole container which wrapps each element */
-.about-container {
-    /* outline: solid red 2px; */
-    text-align: center;
-}
-
-/* content container styling */
-.textblock-div {
-    /* outline: solid blue 2px; */
-    margin-block: 15px; 
-}
-
-/* Hero text for the about content */
-.about-hero {
-    font-size: var(--hero-fs);
-}
-
-
-/* retaurant introduction / mission statement styling */
-.restaurant-introduction {
-    
-}
-
-/* our story / history styling */
-.our-history {
-
-}
-
-/* the chef / team styling */
-.chef-team {
-
-}
-
-/* our philosophy / ingredients / sourcing styling */
-.philosophy {
-
-}
-
-/* ambience / experience styling*/
-.ambience-experience {
-
-}
-
-/* closing line / call to action */
-.close-line-cta {
-    
+.grid-item {
+    background: red;
+    border: 2px solid black;
 }
