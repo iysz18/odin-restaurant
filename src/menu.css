@@ -1,19 +1,18 @@
 /* styling for the menu tab content */
 :root {
-   --hero-str-fs: 75px;
-   --menu-sub-str-fs: 20px;
+    --font-size-hero: 4.5rem;
+    --font-size-menu-subtitle: 1.25rem;
+    --font-size-item-name: 30px;
+    --font-size-item-desc: 25px;
 
-   /* Menu item styling */
-    --menuItem-bc: #dfdddd;
-    --menuItem-bc-hover: #cbcbcb;
-    --menu-item-padding: 50px;
-    --grid-gap: 20px;
-    --grid-margin-top: 50px;
-    --menu-item-name-fc: 30px;
-    --menu-item-desc-fc: 25px;
+    --background-menu-item: #dfdddd;
+    --background-menu-item-hover: #cbcbcb;
 
-   /* global */
-   --content-margin: 75px 0;
+    --padding-menu-item: 50px;
+    --gap-grid: 20px;
+    --margin-top-grid: 50px;
+
+    --margin-content: 75px 0;
 }
 
 .menu-container {
@@ -48,4 +47,14 @@
 
 .menu-item-desc {
     font-size: var(--menu-item-desc-fc);
+}
+
+.menu-item {
+    background-color: var(--background-menu-item);
+    padding: var(--padding-menu-item);
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: var(--background-menu-item-hover);
 }
