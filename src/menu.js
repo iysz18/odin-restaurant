@@ -68,7 +68,6 @@ export function renderMenu() {
         menuGrid.appendChild(nameDiv);
         menuGrid.appendChild(descDiv);
     });
-    
 
     menuContainer.appendChild(menuGrid);
 
