@@ -10,7 +10,7 @@ export function renderMenu() {
     const menuGrid = document.createElement("div");
     menuGrid.classList.add("menu-grid-container");
     
-    // Hero string and substring
+    // Hero container, string and substring
     const heroContainer = document.createElement("div");
     heroContainer.classList.add("menu-hero-container");
     
