@@ -8,7 +8,7 @@ export function renderMenu() {
 
     // Grid container to hold each menu item in place
     const menuGrid = document.createElement("div");
-    menuGrid.classList.add("grid-container");
+    menuGrid.classList.add("menu-grid-container");
     
     // Hero string and substring
     const heroContainer = document.createElement("div");
