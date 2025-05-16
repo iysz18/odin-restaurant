@@ -8,33 +8,31 @@ export function renderHome() {
     heroContainer.classList.add("hero-container");
 
     // hero string
-    const heroStr = document.createElement("h1");
-    heroStr.textContent = "Vibrant Bowl Creations Full of Greens, Goodness, and a Fiery Kick";
-    heroStr.classList.add("hero-str");
+    const heroStr = createElementWithClass("h1", "hero-str", "Vibrant Bowl Creations Full of Greens, Goodness, and a Fiery Kick");
 
     // hero sub string
-    const heroSubStr = document.createElement("p");
-    heroSubStr.textContent = "Dive into a world of vibrant flavors with our handcrafted bowls—stacked with fresh greens, wholesome ingredients, and a kick of spice that brings every bite to life.";
-    heroSubStr.classList.add("hero-sub-str");
+    const heroSubStr = createElementWithClass("h1", "hero-sub-str", "Dive into a world of vibrant flavors with our handcrafted bowls—stacked with fresh greens, wholesome ingredients, and a kick of spice that brings every bite to life.");
 
     // hero github button
-    const githubBtn = document.createElement("button");
-    githubBtn.textContent = "Visit my GitHub!";
-    githubBtn.classList.add("github-Btn");
+    const githubBtn = createElementWithClass("button", "github-btn", "Visit my GitHub");
 
     // hero menu button
-    const heroMenuBtn = document.createElement("button");
-    heroMenuBtn.textContent = "Show me the menu";
-    heroMenuBtn.classList.add("hero-menu-btn");
+    const heroMenuBtn = createElementWithClass("button", "hero-menu=btn", "Show me the menu");
 
     // create the span element containing "or"
-    const spanElementOr = document.createElement("span");
-    spanElementOr.textContent = "or";
-    spanElementOr.classList.add("span-or");
+    const spanElementOr = createElementWithClass("span", "span-or", "or");
     
     // hero img
     const heroImg = document.createElement("img");
     heroImg.src = img;
+
+    // Helper funciton to reduce repetition
+    function createElementWithClass(tag, className, textContent) {
+        const element = document.createElement(tag);
+        if (className) element.classList.add(className);
+        if (textContent) element.textContent = textContent;
+        return element;
+    }
 
     // I couldn't fix this with css so this container will fix it instead
     // why? because the cta buttons in hero-container > left-container arent alined to the left
