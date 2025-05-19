@@ -3,8 +3,8 @@
     --btn-container-margin: 10px;
     --btn-container-fs: 20px;
     --nav-bg-color: #d7d7d7;
-    --nav-padding: 10px 40px;
-    --nav-border-radius: 3px;
+    --nav-padding: 35px 100px;
+    --nav-border-radius: 10px;
     --nav-height: 50px;
     --nav-margin-top: 15px;
 
@@ -42,12 +42,13 @@ button {
 }
 
 /* fix this and replace values with variables later */
-.github-btn.nav {
+.github-btn {
     background: purple;
     padding: var(--nav-githubBtn-padding);
     color: white;
     border-radius: 10px;
     text-decoration: none;
+    font-size: var(--font-size-button);
 }
 
 .github-btn:hover {
