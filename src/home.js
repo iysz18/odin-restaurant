@@ -2,48 +2,51 @@ import "normalize.css";
 import "./home.css";
 import img from  "./hero-food.png";
 
+// Collection of helper functions
+function createElementWithClass(tag, className, textContent) {
+    const element = document.createElement(tag);
+    if (className) element.classList.add(className);
+    if (textContent) element.textContent = textContent;
+    return element;
+}
 
-export function renderHome() {
-    // Helper funciton to reduce redundance
-    function createElementWithClass(tag, className, textContent) {
-        const element = document.createElement(tag);
-        if (className) element.classList.add(className);
-        if (textContent) element.textContent = textContent;
-        return element;
-    }
+function createHeroSection() {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("left-container");
 
-    // create the necessary elements to render the home tab content
-    const heroContainer = document.createElement("div");
-    heroContainer.classList.add("hero-container");
+    const title = createElementWithClass("h1", "hero-str", "Vibrant Bowl Creations Full of Greens, Goodness, and a Fiery Kick");
+    const subtitle = createElementWithClass("h1", "hero-sub-str", "Dive into a world of vibrant flavors with our handcrafted bowls—stacked with fresh greens, wholesome ingredients, and a kick of spice that brings every bite to life.");
+    
+    wrapper.appendChild(title);
+    wrapper.appendChild(subtitle);
+    wrapper.appendChild(createButtonSection());
 
-    // Create each needd element
-    const heroStr = createElementWithClass("h1", "hero-str", "Vibrant Bowl Creations Full of Greens, Goodness, and a Fiery Kick");
+    return wrapper;
+}
 
-    const heroSubStr = createElementWithClass("h1", "hero-sub-str", "Dive into a world of vibrant flavors with our handcrafted bowls—stacked with fresh greens, wholesome ingredients, and a kick of spice that brings every bite to life.");
+function createButtonSection() {
+    const container = document.createElement("div");
+    container.classList.add("button-container");
+
     const githubBtn = createElementWithClass("button", "github-btn", "Visit my GitHub");
-    const heroMenuBtn = createElementWithClass("button", "hero-menu-btn", "Show me the menu");
     const spanElementOr = createElementWithClass("span", "span-or", "or");
+    const heroMenuBtn = createElementWithClass("button", "hero-menu-btn", "Show me the menu");
+
+    container.appendChild(githubBtn);
+    container.appendChild(spanElementOr);
+    container.appendChild(heroMenuBtn);
+
+    return container;
+}
+
+export function renderHome() {  
+    const container = document.createElement("div");
+    container.classList.add("hero-container");
+    container.appendChild(createHeroSection());
+    
     const heroImg = document.createElement("img");
     heroImg.src = img;
+    container.appendChild(heroImg);
 
-    // I couldn't fix this with css so this container will fix it instead
-    // why? because the cta buttons in hero-container > left-container arent alined to the left
-    const buttonContainer = document.createElement("div");
-    buttonContainer.classList.add("button-container");
-    buttonContainer.appendChild(githubBtn);
-    buttonContainer.appendChild(spanElementOr);
-    buttonContainer.appendChild(heroMenuBtn);
-    
-    // wrapper holding the left side (anything but the img)
-    const leftWrapper = document.createElement("div");
-    leftWrapper.classList.add("left-container");
-    leftWrapper.appendChild(heroStr);
-    leftWrapper.appendChild(heroSubStr);
-    leftWrapper.appendChild(buttonContainer);
-        
-    // append each createc child node to the heroContainer
-    heroContainer.appendChild(leftWrapper);
-    heroContainer.appendChild(heroImg);
-
-    return heroContainer;
+    return container;
 };
