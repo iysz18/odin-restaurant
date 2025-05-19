@@ -1,17 +1,27 @@
-/* styling the nav */
+/* === Root Variables === */
 :root {
-    --btn-container-margin: 10px;
-    --btn-container-fs: 20px;
-    --nav-bg-color: #d7d7d7;
-    --nav-padding: 35px 100px;
-    --nav-border-radius: 10px;
+    /* === Layout === */
     --nav-height: 50px;
+    --nav-border-radius: 10px;
     --nav-margin-top: 15px;
+    --nav-padding: 35px 100px;
 
-    /* stying for the buttons */
+    /* === Widths and Spacing === */
+    --btn-container-margin: 10px;
     --nav-githubBtn-padding: 15px 35px;
+
+    /* === Font Sizes === */
+    --btn-container-fs: 20px;
+    --font-size-button: 20px;
+
+    /* === Colors === */
+    --nav-bg-color: #d7d7d7;
+    --github-btn-bg: purple;
+    --github-btn-hover-bg: #b502b5;
+    --color-white: white;
 }
 
+/* === Navbar Container === */
 .navbar {
     display: flex;
     align-items: center;
@@ -22,40 +32,41 @@
     padding: var(--nav-padding);
     background: var(--nav-bg-color);
 
-    /* testing, going to change in later version */
+    /* Centering for layout testing */
     margin-inline: auto;
     width: 85%;
 }
 
-/* styling for each button in the navbar */
+/* === Button Container Inside Navbar === */
 .nav.button-container button {
-    margin-inline: 10px;
+    margin-inline: var(--btn-container-margin);
 }
 
-/* section of styling for each button */
+/* === Base Button Styles === */
 button {
     background: none;
     border: none;
-
-    /* font settings */
     font-size: var(--btn-container-fs);
 }
 
-/* fix this and replace values with variables later */
+/* === GitHub Button (anchor styled like button) === */
 .github-btn {
-    background: purple;
+    background: var(--github-btn-bg);
     padding: var(--nav-githubBtn-padding);
-    color: white;
-    border-radius: 10px;
+    color: var(--color-white);
+    border-radius: var(--nav-border-radius);
     text-decoration: none;
     font-size: var(--font-size-button);
+    display: inline-block; /* allows correct box sizing */
 }
 
+/* === GitHub Button Hover Effect === */
 .github-btn:hover {
-    background: #b502b5;
+    background: var(--github-btn-hover-bg);
     padding: var(--nav-githubBtn-padding);
 }
 
+/* === Button Cursor on Hover === */
 button:hover {
     cursor: pointer;
 }
