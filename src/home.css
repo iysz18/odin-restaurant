@@ -26,6 +26,13 @@
     --width-hero-container-home: 1250px;
 }
 
+/* === Background === */
+body {
+    background: url("./bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
 /* === Layout Containers === */
 .hero-container {
     display: flex;  
