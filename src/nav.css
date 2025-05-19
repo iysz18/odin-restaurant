@@ -42,7 +42,7 @@ button {
 }
 
 /* fix this and replace values with variables later */
-.github-btn {
+.github-btn.nav {
     background: purple;
     padding: var(--nav-githubBtn-padding);
     color: white;
@@ -51,7 +51,7 @@ button {
 }
 
 .github-btn:hover {
-    background: rgb(181, 2, 181);
+    background: #b502b5;
     padding: var(--nav-githubBtn-padding);
 }
 
