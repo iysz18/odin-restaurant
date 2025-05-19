@@ -1,8 +1,8 @@
 import "normalize.css";
 import "./home.css";
-import img from  "./hero-food.png";
+import img from "./hero-food.png";
 
-// Collection of helper functions
+// Helper function
 function createElementWithClass(tag, className, textContent) {
     const element = document.createElement(tag);
     if (className) element.classList.add(className);
@@ -10,25 +10,17 @@ function createElementWithClass(tag, className, textContent) {
     return element;
 }
 
-function createHeroSection() {
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("left-container");
-
-    const title = createElementWithClass("h1", "hero-str", "Vibrant Bowl Creations Full of Greens, Goodness, and a Fiery Kick");
-    const subtitle = createElementWithClass("h1", "hero-sub-str", "Dive into a world of vibrant flavors with our handcrafted bowls—stacked with fresh greens, wholesome ingredients, and a kick of spice that brings every bite to life.");
-    
-    wrapper.appendChild(title);
-    wrapper.appendChild(subtitle);
-    wrapper.appendChild(createButtonSection());
-
-    return wrapper;
-}
-
 function createButtonSection() {
     const container = document.createElement("div");
     container.classList.add("button-container");
 
-    const githubBtn = createElementWithClass("button", "github-btn", "Visit my GitHub");
+    const githubBtn = document.createElement("a");
+    githubBtn.classList.add("github-btn");
+    githubBtn.textContent = "Visit my GitHub";
+    githubBtn.href = "https://github.com/YOUR_USERNAME";
+    githubBtn.target = "_blank";
+    githubBtn.rel = "noopener noreferrer";
+
     const spanElementOr = createElementWithClass("span", "span-or", "or");
     const heroMenuBtn = createElementWithClass("button", "hero-menu-btn", "Show me the menu");
 
@@ -39,14 +31,31 @@ function createButtonSection() {
     return container;
 }
 
-export function renderHome() {  
-    const container = document.createElement("div");
-    container.classList.add("hero-container");
-    container.appendChild(createHeroSection());
-    
+function createHeroSection() {
+    const leftContainer = document.createElement("div");
+    leftContainer.classList.add("left-container");
+
+    const title = createElementWithClass("h1", "hero-str", "Vibrant Bowl Creations Full of Greens, Goodness, and a Fiery Kick");
+    const subtitle = createElementWithClass("p", "hero-sub-str", "Dive into a world of vibrant flavors with our handcrafted bowls—stacked with fresh greens, wholesome ingredients, and a kick of spice that brings every bite to life.");
+
+    leftContainer.appendChild(title);
+    leftContainer.appendChild(subtitle);
+    leftContainer.appendChild(createButtonSection());
+
+    return leftContainer;
+}
+
+export function renderHome() {
+    const heroContainer = document.createElement("div");
+    heroContainer.classList.add("hero-container");
+
     const heroImg = document.createElement("img");
     heroImg.src = img;
-    container.appendChild(heroImg);
+    heroImg.alt = "A bowl of vibrant, spicy food";
+    heroImg.loading = "lazy";
 
-    return container;
-};
+    heroContainer.appendChild(createHeroSection());
+    heroContainer.appendChild(heroImg);
+
+    return heroContainer;
+}
