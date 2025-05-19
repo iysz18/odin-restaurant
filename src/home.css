@@ -5,7 +5,7 @@
     --font-size-subtitle-home: 20px;
     --font-family-global: "Roboto";
     --font-size-span-button-container: 20px;
-    --font-size-buttons: 20px;
+    --font-size-button: 20px;
 
     /* Colors */
     --color-white: #ffffff;
@@ -60,7 +60,7 @@
     padding: var(--padding-button-container);
     color: var(--color-white);
     border-radius: var(--button-radius);
-    font-size: var(--font-size-buttons);
+    font-size: var(--font-size-button);
     text-decoration: none; /* removes underline */
     display: inline-block; /* needed for <a> to size like a button */
 }
