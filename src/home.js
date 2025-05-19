@@ -15,13 +15,13 @@ function createButtonSection() {
     container.classList.add("button-container");
     container.classList.add("home");
     const githubBtn = document.createElement("a");
-    githubBtn.classList.add("github-btn");
+    githubBtn.classList.add("hero-nav-button");
     githubBtn.textContent = "Visit my GitHub";
-    githubBtn.href = "https://github.com/iysz18 ";
+    githubBtn.href = "https://github.com/iysz18";
     githubBtn.target = "_blank";
     githubBtn.rel = "noopener noreferrer";
     const spanElementOr = createElementWithClass("span", "span-or", "or");
-    const heroMenuBtn = createElementWithClass("button", "hero-menu-btn", "Show me the menu");
+    const heroMenuBtn = createElementWithClass("button", "hero-nav-button", "Show me the menu");
     container.appendChild(githubBtn);
     container.appendChild(spanElementOr);
     container.appendChild(heroMenuBtn);
