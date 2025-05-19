@@ -19,6 +19,7 @@
     --margin-hero-container-home: 100px;
     --margin-subtitle-block: 20px;
     --margin-center-home: auto;
+    --margin-block-body: 30px;
     --width-subtitle: 650px;
     --width-hero-string-home: 650px;
     --margin-span-button-container: 30px;
@@ -28,6 +29,7 @@
 
 /* === Background === */
 body {
+    margin-block: var(--margin-block-body);
     background: url("./bg.png");
     background-size: cover;
     background-position: center;
