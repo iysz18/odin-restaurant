@@ -1,57 +1,74 @@
-/* styling for the home tab content */
+/* === Root Variables === */
 :root {
-    /* global */
-    --global-ff: "Roboto";
-    --global-fc: #393939;
-    
-    /* font settings */
-    --hero-fs: 75px;
-    --hero-sub-fs: 20px;   
+    /* Font Sizes */
+    --font-size-hero: 75px;
+    --font-size-subtitle: 20px;
+    --font-family-global: "Roboto";
+    --font-size-span-button-container: 20px;
+    --font-size-buttons: 20px;
 
-    /* buttons */
-    --left-container-btnColor: purple;
-    --left-container-btnPadding: 10px 20px;
-    --whiteColor: white;
-    --btn-radius: 10px;
+    /* Colors */
+    --color-white: #ffffff;
+    --font-color-global: #393939;
+    --color-button-container-bg: #800080;
+    --color-button-hover: #b502b5;
+    /* Spacing */
+    --padding-button-container: 10px 20px;
+    --button-radius: 10px;
+    --margin-hero-container: 75px;
+    --margin-subtitle-block: 20px;
+    --width-subtitle: 650px;
+    --margin-span-button-container: 30px;
+    --image-hero: 500px;
 }
 
+/* === Layout Containers === */
 .hero-container {
     display: flex;  
     justify-content: space-around;
-    margin-block: 75px;
-    /* outline: solid red 2px; */
+    margin-block: var(--margin-hero-container);
 }
 
 .left-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 
+/* === Hero Text Elements === */
 .hero-str {
-    font-size: var(--hero-fs);
+    font-size: var(--font-size-hero);
     margin: 0;
 }
 
 .hero-sub-str {
-    font-size: var(--hero-sub-fs);
-    margin-block: 20px;
-    width: 650px;
+    font-size: var(--font-size-subtitle);
+    margin-block: var(--margin-subtitle-block);
+    width: var(--width-subtitle);
 }
 
-.left-container .button-container button {
-    background: var(--left-container-btnColor);
-    padding: var(--left-container-btnPadding);
-    color: var(--whiteColor);
-    border-radius: var(--btn-radius);
+/* === Button Section Styles === */
+.hero-nav-button {
+    background: var(--color-button-container-bg);
+    padding: var(--padding-button-container);
+    color: var(--color-white);
+    border-radius: var(--button-radius);
+    font-size: var(--font-size-buttons);
+    text-decoration: none; /* removes underline */
+    display: inline-block; /* needed for <a> to size like a button */
 }
 
+.hero-nav-button:hover {
+    background-color: var(--color-button-hover); 
+}
+
+/* === Inline Separator Element === */
 .span-or {
-    margin-inline: 20px;
-    font-size: 30px;
+    margin-inline: var(--margin-span-button-container);
+    font-size: var(--font-size-span-button-container);
 }
 
-/* right side of the hero container */
+/* === Right-Side Image === */
 .hero-img {
-    height: 550px;
+    height: var(--image-hero);
 }
