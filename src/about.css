@@ -15,9 +15,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-    /* enable outline for visualization of container */
-    /* outline: red 2px solid; */
 }
 
 /* === Grid container and grid items styling === */
@@ -34,6 +31,12 @@
     border-radius: 8px;
     padding: var(--padding-grid-item);
     text-align: center;
+    transition: background-color 0.3s ease;
+    background-color: var(--color-item-bg);
+}
+
+.grid-item:hover {
+    background-color: var(--color-item-bg-hover);
 }
 
 .about-hero { 
