@@ -17,7 +17,7 @@ function createButtonSection() {
     const githubBtn = document.createElement("a");
     githubBtn.classList.add("github-btn");
     githubBtn.textContent = "Visit my GitHub";
-    githubBtn.href = "https://github.com/YOUR_USERNAME";
+    githubBtn.href = "https://github.com/iysz18";
     githubBtn.target = "_blank";
     githubBtn.rel = "noopener noreferrer";
 
