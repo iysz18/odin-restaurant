@@ -1,8 +1,8 @@
 /* === Root Variables === */
 :root {
     /* Font Sizes */
-    --font-size-hero: 75px;
-    --font-size-subtitle: 20px;
+    --font-size-hero-home: 55px;
+    --font-size-subtitle-home: 20px;
     --font-family-global: "Roboto";
     --font-size-span-button-container: 20px;
     --font-size-buttons: 20px;
@@ -12,21 +12,27 @@
     --font-color-global: #393939;
     --color-button-container-bg: #800080;
     --color-button-hover: #b502b5;
+
     /* Spacing */
     --padding-button-container: 10px 20px;
     --button-radius: 10px;
-    --margin-hero-container: 75px;
+    --margin-hero-container-home: 100px;
     --margin-subtitle-block: 20px;
+    --margin-center-home: auto;
     --width-subtitle: 650px;
+    --width-hero-string-home: 650px;
     --margin-span-button-container: 30px;
     --image-hero: 500px;
+    --width-hero-container-home: 1250px;
 }
 
 /* === Layout Containers === */
 .hero-container {
     display: flex;  
     justify-content: space-around;
-    margin-block: var(--margin-hero-container);
+    margin-block: var(--margin-hero-container-home);
+    margin-inline: var(--margin-center-home);
+    width: var(--width-hero-container-home);
 }
 
 .left-container {
@@ -37,12 +43,13 @@
 
 /* === Hero Text Elements === */
 .hero-str {
-    font-size: var(--font-size-hero);
+    font-size: var(--font-size-hero-home);
+    width: var(--width-hero-string-home);
     margin: 0;
 }
 
 .hero-sub-str {
-    font-size: var(--font-size-subtitle);
+    font-size: var(--font-size-subtitle-home);
     margin-block: var(--margin-subtitle-block);
     width: var(--width-subtitle);
 }
