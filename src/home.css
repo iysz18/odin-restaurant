@@ -52,6 +52,6 @@
 }
 
 /* right side of the hero container */
-img {
+.hero-img {
     height: 550px;
 }
