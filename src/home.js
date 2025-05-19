@@ -13,6 +13,7 @@ function createElementWithClass(tag, className, textContent) {
 function createButtonSection() {
     const container = document.createElement("div");
     container.classList.add("button-container");
+    container.classList.add("home");
     const githubBtn = document.createElement("a");
     githubBtn.classList.add("github-btn");
     githubBtn.textContent = "Visit my GitHub";
