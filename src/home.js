@@ -17,7 +17,7 @@ function createButtonSection() {
     const githubBtn = document.createElement("a");
     githubBtn.classList.add("hero-nav-button");
     githubBtn.textContent = "Visit my GitHub";
-    githubBtn.href = "https://github.com/iysz18";
+    githubBtn.href = "https://github.com/iysz18 ";
     githubBtn.target = "_blank";
     githubBtn.rel = "noopener noreferrer";
     const spanElementOr = createElementWithClass("span", "span-or", "or");
