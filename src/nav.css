@@ -9,16 +9,18 @@
     /* === Widths and Spacing === */
     --btn-container-margin: 10px;
     --nav-githubBtn-padding: 15px 35px;
+    --nav-padding: 35px 50px;
 
     /* === Font Sizes === */
     --btn-container-fs: 20px;
     --font-size-button: 20px;
 
     /* === Colors === */
-    --nav-bg-color: #d7d7d7;
+    --nav-bg-color: rgb(215, 215, 215);
     --github-btn-bg: purple;
     --github-btn-hover-bg: #b502b5;
     --color-white: white;
+    --nav-border-color: #636363;
 }
 
 /* === Navbar Container === */
@@ -31,10 +33,19 @@
     border-radius: var(--nav-border-radius);
     padding: var(--nav-padding);
     background: var(--nav-bg-color);
+    border: solid 2px var(--nav-border-color);
 
     /* Centering for layout testing */
     margin-inline: auto;
     width: 85%;
+}
+
+.blurred-background {
+    background: rgba(215, 215, 215, 0.504);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: var(--nav-padding);
+    border-radius: 10px;
 }
 
 /* === Button Container Inside Navbar === */
