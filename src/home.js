@@ -1,10 +1,9 @@
 import "normalize.css";
 import "./home.css";
 import img from "./hero-food.png";
-import { renderMenu } from "./menu.js";
 
 // Helper function
-function createElementWithClass(tag, className, textContent, eventName) {
+function createElementWithClass(tag, className, textContent) {
     const element = document.createElement(tag);
     if (className) element.classList.add(className);
     if (textContent) element.textContent = textContent;
