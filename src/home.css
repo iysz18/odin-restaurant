@@ -16,10 +16,10 @@
     /* Spacing */
     --padding-button-container: 10px 20px;
     --button-radius: 10px;
-    --margin-hero-container-home: 100px;
+    --margin-hero-container-top: 100px;
     --margin-subtitle-block: 20px;
     --margin-center-home: auto;
-    --margin-block-body: 30px;
+    --margin-bottom-body: 30px;
     --width-subtitle: 650px;
     --width-hero-string-home: 650px;
     --margin-span-button-container: 30px;
@@ -29,7 +29,7 @@
 
 /* === Background === */
 body {
-    margin-block: var(--margin-block-body);
+    margin-block: var(--margin-bottom-body);
     background: url("./bg.png");
     background-size: cover;
     background-position: center;
@@ -40,7 +40,7 @@ body {
 .hero-container {
     display: flex;  
     justify-content: space-around;
-    margin-block: var(--margin-hero-container-home);
+    margin-top: var(--margin-hero-container-top);
     margin-inline: var(--margin-center-home);
     width: var(--width-hero-container-home);
 }
