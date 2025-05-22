@@ -48,18 +48,23 @@
     border-radius: 10px;
 }
 
-/* === Button Container Inside Navbar === */
-.nav.button-container button {
-    margin-inline: var(--btn-container-margin);
-}
-
 /* === Base Button Styles === */
-button {
+nav button {
     background: none;
     border: none;
     font-size: var(--btn-container-fs);
+    transition: font-size 0.3s ease;
 }
 
+nav button:hover {
+    font-size: 24px;
+    transform: scale(1.2);
+    color: var(--github-btn-hover-bg);
+}
+
+.nav.button-container button {
+    margin-inline: var(--btn-container-margin);
+}
 /* === GitHub Button (anchor styled like button) === */
 .github-btn {
     background: var(--github-btn-bg);
