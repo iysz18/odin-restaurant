@@ -7,6 +7,8 @@
     --font-family-global: "Roboto";
     --font-size-span-button-container: 20px;
     --font-size-button: 20px;
+    --font-size-footer: 20px;
+    --font-weight-footer: 500;
 
     /* Colors */
     --color-white: #ffffff;
@@ -36,7 +38,7 @@ body {
     background-size: cover;
     background-position: center;
     /* REMOVE THIS: height: 100vh; */
-    min-height: 100vh; /* optional, ensures body is at least full screen */
+    height: 100vh; /* optional, ensures body is at least full screen */
 }
 
 .page-wrapper {
@@ -103,8 +105,20 @@ body {
 }
 
 /* simple but not efficient and clean fix to position footer on the bottom of page */
-.footer-section {
+
+.footer-section.blurred-background {
+    display: flex;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    /* outline: 2px solid red; */
-    margin-top: 130px;
+    margin-top: 70px;
+    width: max-content;
+    margin-inline: auto;
+    border: solid 1px #393939;
+}
+
+.footer-para {
+    font-size: var(--font-size-footer);
+    font-weight: var(--font-weight-footer);
 }
