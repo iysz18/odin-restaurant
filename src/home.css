@@ -108,11 +108,12 @@ body {
 
 .footer-section.blurred-background {
     display: flex;
-    height: 10px;
+    height: 20px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 100px;
     width: max-content;
     margin-inline: auto;
     border: solid 1px #393939;
