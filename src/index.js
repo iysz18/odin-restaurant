@@ -11,8 +11,15 @@ document.addEventListener("DOMContentLoaded", ()  => {
     // Main container holding the rendered tab content
     const contentContainer = document.querySelector(".content");
 
-    // Render home as default tab
+    // Render home as default tab and when clicking h1
+    const logo = document.querySelector(".logo");
+        logo.addEventListener("click", () => {
+        contentContainer.innerHTML = ""; // Clear existing content
+        contentContainer.appendChild(renderHome());
+    });
+
     contentContainer.appendChild(renderHome());
+
 
     const tabButtons = document.querySelectorAll("[data-tab]");
     tabButtons.forEach((button) => {
