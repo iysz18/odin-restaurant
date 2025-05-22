@@ -48,6 +48,12 @@ function createImage({ src, alt = "", loading = "lazy", className = "" }) {
 }
 
 export function renderHome() {
+    // reference to page wrappe
+    const pageWrapper = document.querySelector(".page-wrapper");
+    const footerSection = createElementWithClass("div", "footer-section", "");
+    footerSection.appendChild(createElementWithClass("p", "footer-para", "VibrantBowl 2025 - all Rights reserved."));
+    pageWrapper.appendChild(footerSection);
+    
     // Main function to render/create elements for the hero container
     const heroContainer = document.createElement("div");
     heroContainer.classList.add("hero-container");
