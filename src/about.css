@@ -24,6 +24,7 @@
     gap: 20px;
     justify-content: center;
     max-width: var(--max-width-container);
+    margin-bottom: var(--margin-page-footer);
 }
 
 .grid-item {
