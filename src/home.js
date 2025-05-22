@@ -50,6 +50,7 @@ function createImage({ src, alt = "", loading = "lazy", className = "" }) {
 function footerSection() {
     // reference to page wrappe
     const footer = createElementWithClass("div", "footer-section", "");
+    footer.classList.add("blurred-background");
     footer.appendChild(createElementWithClass("p", "footer-para", "VibrantBowl 2025 © - all Rights reserved."));
 
     return footer;
