@@ -79,11 +79,12 @@ body {
     background-color: var(--color-button-hover); 
 }
 
-/* === Inline Separator Element === */
-.span-or {
+/* === Inline Separator Element === */ 
+/* .span-or {
+    Disabled!!!!
     margin-inline: var(--margin-span-button-container);
     font-size: var(--font-size-span-button-container);
-}
+} */
 
 /* === Right-Side Image === */
 .hero-img {

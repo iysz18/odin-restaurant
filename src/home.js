@@ -1,12 +1,14 @@
 import "normalize.css";
 import "./home.css";
 import img from "./hero-food.png";
+import { renderMenu } from "./menu.js";
 
 // Helper function
-function createElementWithClass(tag, className, textContent) {
+function createElementWithClass(tag, className, textContent, eventName) {
     const element = document.createElement(tag);
     if (className) element.classList.add(className);
     if (textContent) element.textContent = textContent;
+
     return element;
 }
 
@@ -20,11 +22,9 @@ function createButtonSection() {
     githubBtn.href = "https://github.com/iysz18 ";
     githubBtn.target = "_blank";
     githubBtn.rel = "noopener noreferrer";
-    const spanElementOr = createElementWithClass("span", "span-or", "or");
-    const heroMenuBtn = createElementWithClass("button", "hero-nav-button", "Show me the menu");
+    // const spanElementOr = createElementWithClass("span", "span-or", "or");
     container.appendChild(githubBtn);
-    container.appendChild(spanElementOr);
-    container.appendChild(heroMenuBtn);
+    // container.appendChild(spanElementOr);
     return container;
 }
 
