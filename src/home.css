@@ -1,3 +1,4 @@
+
 /* === Root Variables === */
 :root {
     /* Font Sizes */
@@ -29,10 +30,15 @@
 
 /* === Background === */
 body {
-    margin-block: var(--margin-bottom-body);
+    /* margin-bottom: var(--margin-bottom-body); */
     background: url("./bg.png");
     background-size: cover;
     background-position: center;
+    /* REMOVE THIS: height: 100vh; */
+    min-height: 100vh; /* optional, ensures body is at least full screen */
+}
+
+.page-wrapper {
     height: 100vh;
 }
 
@@ -92,4 +98,11 @@ body {
 /* === Right-Side Image === */
 .hero-img {
     height: var(--image-hero);
+}
+
+/* simple but not efficient and clean fix to position footer on the bottom of page */
+.footer-section {
+    text-align: center;
+    outline: 2px solid red;
+    margin-top: 130px;
 }
